@@ -1,0 +1,25 @@
+{
+  "name": "tiptag-for-hsk",
+  "version": "0.1.0",
+  "scripts": {
+    "launch": "npx hardhat node",
+    "build": "npx hardhat compile",
+    "deploy:share:local": "npx hardhat ignition deploy ./ignition/modules/IPShare.ts --network localhost",
+    "deploy:donut:local": "npx hardhat ignition deploy ./ignition/modules/Donut.ts --network localhost",
+    "deploy:pump:local": "npx hardhat ignition deploy ./ignition/modules/Pump.ts --network localhost",
+    "deploy:token:local": "npx hardhat ignition deploy ./ignition/modules/Token.ts --network localhost",
+    "deploy:share:thsk": "npx hardhat ignition deploy ./ignition/modules/IPShare.ts --network hashkeyTestnet",
+    "deploy:donut:thsk": "npx hardhat ignition deploy ./ignition/modules/Donut.ts --network hashkeyTestnet",
+    "deploy:pump:thsk": "npx hardhat ignition deploy ./ignition/modules/Pump.ts --network hashkeyTestnet",
+    "deploy:token:thsk": "npx hardhat ignition deploy ./ignition/modules/Token.ts --network hashkeyTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.9",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^16.4.7"
+  }
+}
